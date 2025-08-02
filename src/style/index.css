@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+@layer {
+  .gradient-primary {
+    @apply bg-radial-[at_100%_100%] from-slate-50/10 via-slate-900 via-60% to-slate-950 to-90%;
+  }
+}
+@theme {
+  --animate-wiggle: wiggle 5s linear infinite;
+  --animate-infinite-scroll: infinite-scroll  30s linear infinite;
+
+  @keyframes wiggle {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes infinite-scroll {
+    to{
+      left: -80px;
+    }
+  }
+  
+}
