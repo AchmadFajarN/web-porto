@@ -7,18 +7,33 @@ const Contact = () => {
       <div className="">
         <div className="py-16 bg-slate-950 text-white">
           <div className="container mx-auto">
-            <motion.h2 initial={{translateY: 100, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.4, ease: ['easeIn']}} className="text-4xl font-bold text-center mb-12 text-blue-600">
+            <motion.h2
+              initial={{ translateY: 100, opacity: 0 }}
+              whileInView={{ translateY: 0, opacity: 1 }}
+              transition={{ duration: 0.4, ease: ["easeIn"] }}
+              className="text-4xl font-bold text-center mb-12 text-blue-600"
+            >
               What I Can Offer
             </motion.h2>
-            <motion.p initial={{translateY: 100, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.4, ease: ['easeIn']}} className="text-xl text-center mb-16 max-w-3xl mx-auto text-gray-300">
+            <motion.p
+              initial={{ translateY: 100, opacity: 0 }}
+              whileInView={{ translateY: 0, opacity: 1 }}
+              transition={{ duration: 0.4, ease: ["easeIn"] }}
+              className="text-xl text-center mb-16 max-w-3xl mx-auto text-gray-300"
+            >
               I help you bring your digital ideas to life, from simple websites
               to complex web applications. With expertise across the entire web
               development spectrum, I'm ready to build the perfect solution for
               your needs.
             </motion.p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <motion.div initial={{translateY: 100, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.4, ease: ['easeIn']}} className="gradient-primary rounded-lg shadow-lg p-8 flex flex-col items-center text-center border border-white/20 hover:scale-105 transition-transform duration-300">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 group">
+              <motion.div
+                initial={{ translateY: 100, opacity: 0 }}
+                whileInView={{ translateY: 0, opacity: 1 }}
+                transition={{ duration: 0.4, ease: ["easeIn"] }}
+                className="bg-white/20 backdrop-blur-sm md:translate-x-[200px] group-hover:translate-x-0 group-hover:rotate-0 md:rotate-[-5deg] rounded-lg shadow-lg p-8 flex flex-col items-center text-center border border-white/20  transition-transform duration-300"
+              >
                 <div className="text-blue-600 mb-6">
                   <Laptop className="w-16 h-16" />
                 </div>
@@ -32,7 +47,12 @@ const Contact = () => {
                 </p>
               </motion.div>
 
-              <motion.div initial={{translateY: 100, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.5, ease: ['easeIn']}} className="gradient-primary rounded-lg shadow-lg p-8 flex flex-col items-center text-center border border-white/20 hover:scale-105 transition-transform duration-300">
+              <motion.div
+                initial={{ translateY: 100, opacity: 0 }}
+                whileInView={{ translateY: 0, opacity: 1 }}
+                transition={{ duration: 0.4, ease: ["easeIn"] }}
+                className="bg-white/20 backdrop-blur-sm z-10 rounded-lg shadow-lg p-8 flex flex-col items-center text-center border border-white/20  transition-transform"
+              >
                 <div className="text-blue-600 mb-6">
                   <Server className="w-16 h-16" />
                 </div>
@@ -40,13 +60,18 @@ const Contact = () => {
                   Backend Development
                 </h3>
                 <p className="text-gray-200 leading-relaxed mb-6">
-                  Building <b>robust and secure systems</b> behind the scenes that
-                  ensure your website or application runs smoothly. This
+                  Building <b>robust and secure systems</b> behind the scenes
+                  that ensure your website or application runs smoothly. This
                   involves server logic, databases, and efficient APIs.
                 </p>
               </motion.div>
 
-              <motion.div initial={{translateY: 100, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.6, ease: ['easeIn']}} className="gradient-primary rounded-lg shadow-lg p-8 flex flex-col items-center text-center border border-white/20 hover:scale-105 transition-transform duration-300">
+              <motion.div
+                initial={{ translateY: 100, opacity: 0 }}
+                whileInView={{ translateY: 0, opacity: 1 }}
+                transition={{ duration: 0.4, ease: ["easeIn"] }}
+                className="bg-white/20 z-20 md:translate-x-[-200px] group-hover:translate-x-0 group-hover:rotate-0 md:rotate-[5deg] backdrop-blur-sm rounded-lg shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 border border-white/20"
+              >
                 <div className="text-blue-600 mb-6">
                   <Layout className="w-16 h-16" />
                 </div>
@@ -54,7 +79,7 @@ const Contact = () => {
                   Fullstack Development
                 </h3>
                 <p className="text-gray-200 leading-relaxed mb-6">
-                  Developing **complete web solutions from start to finish**,
+                  Developing <b>complete web solutions from start to finish </b>
                   ensuring a seamless user experience and efficiency for your
                   business. From design to server implementation.
                 </p>
@@ -67,10 +92,13 @@ const Contact = () => {
               </h3>
               <a
                 href="#contact"
-                className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full shadow-sm text-slate-950 bg-emerald-400 hover:bg-emerald-500 transition-colors duration-300"
+                className="relative block w-[15rem] group py-1 mx-auto"
               >
-                Contact Me Now
-                <Phone className="ml-3 w-5 h-5" />{" "}
+                <div className="flex justify-center z-50 mx-auto items-center w-60 px-6 rounded-full relative py-4 bg-slate-950">
+                  Contact Me Now
+                  <Phone className="ml-3 w-5 h-5" />
+                </div>
+                <div className="absolute inset-0 group-hover:blur-md transition-all ease-in w-full animate-tilt rounded-full blur-sm bg-conic from-blue-600 to-emerald-400 to-50%"></div>
               </a>
             </div>
           </div>
