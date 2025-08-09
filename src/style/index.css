@@ -5,6 +5,12 @@
   .gradient-primary {
     @apply bg-radial-[at_100%_100%] from-slate-50/10 via-slate-900 via-60% to-slate-950 to-90%;
   }
+  .font-montserat {
+    font-family: "Montserrat", sans-serif;
+  }
+  .font-google-sans {
+    font-family: "Google Sans Code", monospace;
+  }
 }
 @theme {
   --animate-wiggle: wiggle 5s linear infinite;

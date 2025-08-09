@@ -1,7 +1,5 @@
 import { Typewriter } from 'react-simple-typewriter'
 import { Download, FolderGit2, Linkedin, Mail, ChevronDown } from 'lucide-react';
-import profile from '../assets/profile.jpg'
-
 const Hero = () => {
   const data = ["Web Developer", "Front-End", "Back-End"];
   return (
@@ -30,14 +28,13 @@ const Hero = () => {
         <div className='absolute size-1 shadow-[0_0_10px_#ffffff] bg-white border top-25 right-0 rounded-full'>
         </div>
       </div>
-      <div style={{backgroundImage: `url(${profile})`}} className="size-40 bg-center bg-cover rounded-full shadow-[0_25px_10px_rgba(0,0,0,0.3)] mt-10">
+      <div className="mt-40 text-center">
+        <h1 className='font-bold text-xl md:text-4xl'>Hello,</h1>
+        <h1 className="font-semibold text-xl md:text-4xl">My name is Fajar. And I'm </h1>
+        <p className="font-google-sans my-4 md:text-xl font-light"><Typewriter loop={false} words={data} /><span className='border size-2 animate-ping'></span></p>
+        <p className="text-sm ">"Transforming Ideas into Interactive Interfaces"</p>
       </div>
-      <div className="mt-8 text-center">
-        <h1 className="font-bold text-xl md:text-2xl">Achmad Fajar</h1>
-        <h2 className="font-semibold my-2"><Typewriter loop={false} words={data} /><span className='border size-2 animate-ping'></span></h2>
-        <p className="text-sm">"Transforming Ideas into Interactive Interfaces"</p>
-      </div>
-      <div className='mt-4 z-20 flex flex-col md:flex-row gap-4'>
+      <div className='my-8 z-20 flex flex-col md:flex-row gap-4'>
         <button className=' cursor-pointer font-semibold  text-sm justify-center items-center py-2 px-4 bg-linear-to-t from-sky-500 to-indigo-500 hover:shadow-[0_0_20px_2px_rgba(59,130,246,0.5)] transition-all ease-in duration-300 rounded-md'>
           <div className='flex w-full h-full shadow-[0_25px_10px_rgba(0,0,0,0.3)] justify-center items-center gap-2'>
             <Download size={20} />

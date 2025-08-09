@@ -23,8 +23,8 @@ const Tools = () => {
   ];
   return (
     <>
-      <motion.h1 initial={{translateY: 100, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.4, ease: ['easeIn']}} className="my-50 text-center md:text-4xl font-bold">My Tools:</motion.h1> 
-      <div style={{maskImage: 'linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0))'}} className="relative mb-50 overflow-hidden h-[80px]  w-90% mx-auto max-w-[1536px]">
+      <motion.h1 initial={{translateY: 100, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.4, ease: ['easeIn']}} className="my-20 md:my-50 text-center md:text-4xl font-bold">My Tools:</motion.h1> 
+      <div style={{maskImage: 'linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0))'}} className="relative mb-50 px-20 overflow-hidden h-[80px]  w-90% mx-auto max-w-[1536px]">
         {project.map((key, index) => {
           const delay =
             (30 / project.length) * (project.length - (index + 1)) * -1;

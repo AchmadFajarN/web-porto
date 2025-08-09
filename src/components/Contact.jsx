@@ -27,12 +27,12 @@ const Contact = () => {
               your needs.
             </motion.p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 group">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 group">
               <motion.div
                 initial={{ translateY: 100, opacity: 0 }}
                 whileInView={{ translateY: 0, opacity: 1 }}
                 transition={{ duration: 0.4, ease: ["easeIn"] }}
-                className="bg-white/20 backdrop-blur-sm md:translate-x-[200px] group-hover:translate-x-0 group-hover:rotate-0 md:rotate-[-5deg] rounded-lg shadow-lg p-8 flex flex-col items-center text-center border border-white/20  transition-transform duration-300"
+                className="bg-white/20 backdrop-blur-sm xl:translate-x-[200px] group-hover:translate-x-0 group-hover:rotate-0 xl:rotate-[-5deg] rounded-lg shadow-lg p-8 flex flex-col items-center text-center border border-white/20  transition-transform duration-300"
               >
                 <div className="text-blue-600 mb-6">
                   <Laptop className="w-16 h-16" />
@@ -70,7 +70,7 @@ const Contact = () => {
                 initial={{ translateY: 100, opacity: 0 }}
                 whileInView={{ translateY: 0, opacity: 1 }}
                 transition={{ duration: 0.4, ease: ["easeIn"] }}
-                className="bg-white/20 z-20 md:translate-x-[-200px] group-hover:translate-x-0 group-hover:rotate-0 md:rotate-[5deg] backdrop-blur-sm rounded-lg shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 border border-white/20"
+                className="bg-white/20 z-20 xl:translate-x-[-200px] group-hover:translate-x-0 group-hover:rotate-0 xl:rotate-[5deg] backdrop-blur-sm rounded-lg shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 border border-white/20"
               >
                 <div className="text-blue-600 mb-6">
                   <Layout className="w-16 h-16" />
