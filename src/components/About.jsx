@@ -1,10 +1,10 @@
 import profile from "../assets/profile.jpg";
 import { motion } from "motion/react";
 
-const About = () => {
+const About = ({ aboutRef }) => {
   return (
     <>
-      <div className="my-10 px-6">
+      <div ref={ aboutRef } className="my-10 px-6">
          <motion.h1 initial={{translateY: 100, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.4, ease: ['easeIn']}} className="my-20 text-center md:text-4xl font-bold">About Me</motion.h1> 
         <div className="flex flex-col justify-center gap-8 items-center">
           <motion.div initial={{translateY: 200, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.6, ease: ['easeIn']}} className="relative group">

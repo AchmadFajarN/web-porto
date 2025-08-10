@@ -2,11 +2,11 @@ import { getAllProject } from "../data/constant";
 import Card from "./Card";
 import { motion } from "motion/react";
 
-const Project = () => {
+const Project = ({ targetRef }) => {
   const data = getAllProject();
 
   return (
-    <div className="mt-50 px-4 xl:px-20">
+    <div ref={targetRef} className="mt-50 px-4 xl:px-20">
       <motion.h1
         initial={{ translateY: 100, opacity: 0 }}
         whileInView={{ translateY: 0, opacity: 1 }}
