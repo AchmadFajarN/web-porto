@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Card = ({ id, image, name, description, status, tools, duration }) => {
   return (
     <Link to={`/project/${ id }`} className="hover:scale-105 transition-transform ease-in">
-      <motion.div initial={{translateY: 300, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: `0.${duration}`, ease: ['easeIn']}} className="rounded-md overflow-hidden flex flex-col bg-radial-[at_100%_100%] from-slate-50/10 via-slate-900 via-60% to-slate-950 to-90% backdrop-blur-lg shadow-xl">
+      <motion.div initial={{translateY: 300, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: `0.${duration}`, ease: ['easeInOut']}} className="rounded-md overflow-hidden flex flex-col bg-radial-[at_100%_100%] from-slate-50/10 via-slate-900 via-60% to-slate-950 to-90% backdrop-blur-lg shadow-xl">
         <div
           style={{ backgroundImage: `url(${image})` }}
           className="h-50 bg-cover bg-center rounded-md"

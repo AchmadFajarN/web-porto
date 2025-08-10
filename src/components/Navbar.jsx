@@ -25,23 +25,32 @@ const Navbar = () => {
     >
       <nav className="flex justify-between">
         <h1 className="font-bold text-2xl">AF</h1>
-        <ul className="flex gap-4">
+        <div className="">
           {location.pathname === "/" ? (
             <>
-              <li className="hover:text-yellow-500 cursor-pointer transition-colors ease-in">
-                Home
-              </li>
-              <li className="hover:text-yellow-500 cursor-pointer transition-colors ease-in">
-                Project
-              </li>
-              <li className="hover:text-yellow-500 cursor-pointer transition-colors ease-in">
-                About
-              </li>
+              <ul className="flex gap-4">
+                <li className="hover:text-yellow-500 cursor-pointer transition-colors ease-in">
+                  Home
+                </li>
+                <li className="hover:text-yellow-500 cursor-pointer transition-colors ease-in">
+                  Project
+                </li>
+                <li className="hover:text-yellow-500 cursor-pointer transition-colors ease-in">
+                  About
+                </li>
+              </ul>
             </>
           ) : (
-            <li><Link className="hover:text-yellow-500 transition-colors ease-in" to={'/'}>Home</Link></li>
+            <li>
+              <Link
+                className="hover:text-yellow-500 transition-colors ease-in"
+                to={"/"}
+              >
+                Home
+              </Link>
+            </li>
           )}
-        </ul>
+        </div>
       </nav>
     </header>
   );
