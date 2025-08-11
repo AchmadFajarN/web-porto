@@ -5,15 +5,14 @@ import Contact from "../components/Contact";
 import About from "../components/About";
 import { useRef } from "react";
 
-const Homepage = () => {
-  const targetRef = useRef(null);
-  
+const Homepage = ({ homeTarget, aboutTarget, projectTarget, targetRef }) => {
+
   return (
     <>
-      <Hero targetRef={targetRef} />
-      <Project targetRef={targetRef} />
+      <Hero targetRef={ targetRef } homeTarget={ homeTarget } />
+      <Project targetRef={ projectTarget } />
       <Tools />
-      <About />
+      <About aboutRef={ aboutTarget } />
       <Contact />
     </>
   );

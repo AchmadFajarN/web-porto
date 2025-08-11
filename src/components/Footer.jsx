@@ -7,11 +7,6 @@ const Footer = () => {
             <Linkedin />
             <Github />
         </div>
-        <ul className="flex gap-4">
-            <li>Home</li>
-            <li>Project</li>
-            <li>About</li>
-        </ul>
         <p className="text-sm font-semibold mt-5 text-center">© 2025 | Achmad Fajar | achmadfajar712@gmail.com</p>
     </footer>
   )

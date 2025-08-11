@@ -1,7 +1,7 @@
 import { Typewriter } from 'react-simple-typewriter'
 import { Download, FolderGit2, Linkedin, Mail, ChevronDown } from 'lucide-react';
 
-const Hero = ({ targetRef }) => {
+const Hero = ({ targetRef, homeTarget }) => {
 
   const handlerScroll = () => {
     targetRef.current.scrollIntoView({
@@ -14,7 +14,7 @@ const Hero = ({ targetRef }) => {
   const data = ["Web Developer", "Front-End", "Back-End"];
 
   return (
-    <div className="relative w-full pt-10 flex flex-col items-center h-screen bg-radial-[at_50%_0%] from-slate-50/20 via-slate-950 via-60% to-slate-950 to-90%">
+    <div ref={homeTarget} className="relative w-full pt-10 flex flex-col items-center h-screen bg-radial-[at_50%_0%] from-slate-50/20 via-slate-950 via-60% to-slate-950 to-90%">
       <div className='absolute size-200 -top-[50%] animate-wiggle '>
         <div className='absolute shadow-[0_0_10px_#ffffff] size-1 bg-white border bottom-0 rounded-full'>
         </div>
@@ -55,7 +55,7 @@ const Hero = ({ targetRef }) => {
         <a href='https://github.com/AchmadFajarN' target='_blank' className=' cursor-pointer font-semibold text-sm justify-center items-center py-2 px-4 bg-linear-to-t from-emerald-400 to-green-500 hover:shadow-[0_0_20px_2px_rgba(52,211,153,0.5)] transition-all ease-in duration-300 rounded-md'>
           <div className='flex w-full h-full shadow-[0_25px_10px_rgba(0,0,0,0.3)] justify-center items-center gap-2'>
             <FolderGit2 size={20} />
-            See My Repos
+            See My Github
           </div>
         </a>
       </div>
