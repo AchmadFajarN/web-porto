@@ -60,9 +60,9 @@ const Hero = ({ targetRef, homeTarget }) => {
         </a>
       </div>
       <div className='flex gap-4 mt-8 z-20'>
-        <div className='p-2 shadow-[0_25px_10px_rgba(0,0,0,0.3)] cursor-pointer bg-white/10 hover:bg-white/20 transition-colors duration-300 ease-in-out rounded-full'>
+        <a href='https://www.linkedin.com/in/achmad-fajar-28b00335a/' target='_blank' className='p-2 shadow-[0_25px_10px_rgba(0,0,0,0.3)] cursor-pointer bg-white/10 hover:bg-white/20 transition-colors duration-300 ease-in-out rounded-full'>
           <Linkedin className='text-gray-50/50' />
-        </div>
+        </a>
         <div className='p-2 shadow-[0_25px_10px_rgba(0,0,0,0.3)] cursor-pointer bg-white/10 hover:bg-white/20 transition-colors duration-300 ease-in-out rounded-full'>
           <Mail className='text-gray-50/50' />
         </div>

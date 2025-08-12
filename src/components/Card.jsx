@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
+import { ArrowUpLeftFromSquareIcon } from "lucide-react";
 
 const Card = ({ id, image, name, description, status, tools, duration }) => {
   return (
@@ -10,7 +11,7 @@ const Card = ({ id, image, name, description, status, tools, duration }) => {
           className="h-50 bg-cover bg-center rounded-md"
         ></div>
         <div className="flex-1 p-4">
-          <h2 className="font-bold">{name}</h2>
+          <h2 className="font-bold flex justify-between items-center">{name} <ArrowUpLeftFromSquareIcon /> </h2>
           <p className="my-2 text-sm">{description}</p>
           <p className="text-sm text-gray-50/50">{status}</p>
           <div className="flex gap-2 mt-2">
