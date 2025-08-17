@@ -1,18 +1,21 @@
 import { motion } from "motion/react";
+import { useContext } from "react";
+import themeContext from "../context/ThemeContext";
 
 const Experience = () => {
+  const { locale } = useContext(themeContext);
   return (
     <div className="my-20 px-2 xl:px-20">
-      <motion.h2 initial={{ translateY: 200, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} transition={{ duration: 0.5, ease: ['easeInOut'] }} className="text-center font-semibold text-2xl">Experience</motion.h2>
+      <motion.h2 initial={{ translateY: 200, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} transition={{ duration: 0.5, ease: ['easeInOut'] }} className={`text-center font-semibold text-2xl ${ locale === 'light' && 'text-gray-700' }`}>Experience</motion.h2>
       <div className="mt-10">
         <div className="flex gap-4">
           <div className="flex flex-col justify-center items-center gap-2">
-            <motion.div  className="size-4 bg-gray-50/50 rounded-full"></motion.div>
-            <motion.div initial={{ scaleY: 0, opacity: 0 }} whileInView={{ scaleY: 1, opacity: 1 }} transition={{ duration: 0.5, ease: ['easeInOut'] }} className="origin-top w-1 h-[24rem] md:h-50 bg-gray-50/50"></motion.div>
+            <motion.div  className={`size-4 bg-gray-50/50 rounded-full ${ locale === 'light' && 'bg-gray-900' }`}></motion.div>
+            <motion.div initial={{ scaleY: 0, opacity: 0 }} whileInView={{ scaleY: 1, opacity: 1 }} transition={{ duration: 0.5, ease: ['easeInOut'] }} className={`origin-top w-1 h-[24rem] md:h-50 bg-gray-50/50 ${ locale === 'light' && 'bg-gray-900' }`}></motion.div>
           </div>
-          <motion.div initial={{ translateX: 300, opacity: 0 }} whileInView={{ translateX: 0, opacity: 1 }} transition={{ duration: 0.5, ease: ['easeInOut'] }} >
+          <motion.div className={`${ locale === 'light' && 'text-gray-900' }`} initial={{ translateX: 300, opacity: 0 }} whileInView={{ translateX: 0, opacity: 1 }} transition={{ duration: 0.5, ease: ['easeInOut'] }} >
             <h2 className="text-xl font-semibold">React & BackEnd</h2>
-            <p className="text-gray-50/50">Dicoding Academy</p>
+            <p className={`text-gray-50/50 ${ locale === 'light' && 'text-gray-600' }`}>Dicoding Academy</p>
             <p className="text-xs">March 2025 - August 2025</p>
             <p className="mt-2">Description:</p>
             <p>
@@ -29,12 +32,12 @@ const Experience = () => {
         </div>
         <div className="flex gap-4 mt-2">
           <div className="flex flex-col justify-center items-center gap-2">
-            <motion.div  className="size-4 bg-gray-50/50 rounded-full"></motion.div>
-            <motion.div initial={{ scaleY: 0, opacity: 0 }} whileInView={{ scaleY: 1, opacity: 1 }} transition={{ duration: 0.5, ease: ['easeInOut'] }} className="origin-top w-1 md:h-50 h-[24rem] bg-gray-50/50"></motion.div>
+            <motion.div  className={`size-4 bg-gray-50/50 rounded-full ${ locale === 'light' && 'bg-gray-900' }`}></motion.div>
+            <motion.div initial={{ scaleY: 0, opacity: 0 }} whileInView={{ scaleY: 1, opacity: 1 }} transition={{ duration: 0.5, ease: ['easeInOut'] }} className={`origin-top w-1 md:h-50 h-[24rem] bg-gray-50/50 ${ locale === 'light' && 'bg-gray-900' }`}></motion.div>
           </div>
-          <motion.div initial={{ translateX: 300, opacity: 0 }} whileInView={{ translateX: 0, opacity: 1 }} transition={{ duration: 0.8, ease: ['easeInOut'] }} >
+          <motion.div className={`${ locale === 'light' && 'text-gray-900' }`} initial={{ translateX: 300, opacity: 0 }} whileInView={{ translateX: 0, opacity: 1 }} transition={{ duration: 0.8, ease: ['easeInOut'] }} >
             <h2 className="text-xl font-semibold">Fullstack Bootcamp Course</h2>
-            <p className="text-gray-50/50">Udemy</p>
+            <p className={`text-gray-50/50 ${ locale === 'light' && 'text-gray-600' }`}>Udemy</p>
             <p className="text-xs">March 2024 - December 2025</p>
             <p className="mt-2">Description:</p>
             <p>
@@ -51,11 +54,11 @@ const Experience = () => {
         </div>
         <div className="flex gap-4 mt-2">
           <div className="flex flex-col items-center gap-2">
-            <motion.div intial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="size-4 bg-gray-50/50 rounded-full"></motion.div>
+            <motion.div intial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className={`size-4 bg-gray-50/50 rounded-full ${ locale === 'light' && 'bg-gray-900' }`}></motion.div>
           </div>
-          <motion.div initial={{ translateX: 300, opacity: 0 }} whileInView={{ translateX: 0, opacity: 1 }} transition={{ duration: 0.8, ease: ['easeInOut'] }}>
+          <motion.div className={`${ locale === 'light' && 'text-gray-900' }`} initial={{ translateX: 300, opacity: 0 }} whileInView={{ translateX: 0, opacity: 1 }} transition={{ duration: 0.8, ease: ['easeInOut'] }}>
             <h2 className="text-xl font-semibold">FrontEnd Developer</h2>
-            <p className="text-gray-50/50">Freenlance</p>
+            <p className={`text-gray-50/50 ${ locale === 'light' && 'text-gray-600' }`}>Freenlance</p>
             <p className="text-xs">March 2025 - August 2025</p>
             <p className="mt-2">Description:</p>
             <p>

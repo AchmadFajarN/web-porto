@@ -1,8 +1,11 @@
 import { getAllProject } from "../data/constant";
 import Card from "./Card";
 import { motion } from "motion/react";
+import { useContext } from "react";
+import themeContext from "../context/ThemeContext";
 
 const Project = ({ targetRef }) => {
+  const { locale } = useContext(themeContext);
   const data = getAllProject();
 
   return (
@@ -11,7 +14,7 @@ const Project = ({ targetRef }) => {
         initial={{ translateY: 100, opacity: 0 }}
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.4, ease: ["easeIn"] }}
-        className="my-20 text-center md:text-4xl font-bold"
+        className={`my-20 text-center md:text-4xl font-bold ${ locale === 'light' && 'text-gray-900' }`}
       >
         Projects
       </motion.h1>

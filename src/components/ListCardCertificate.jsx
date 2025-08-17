@@ -2,8 +2,11 @@ import CertificateCard from "./CertificateCard";
 import { Link, useLocation } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
+import { useContext } from "react";
+import themeContext from "../context/ThemeContext";
 
 const ListCardCertificate = ({ data }) => {
+  const { locale } = useContext(themeContext);
   const location = useLocation()  
   return (
     <>
@@ -25,7 +28,7 @@ const ListCardCertificate = ({ data }) => {
         </div>
         <div className="px-2 flex mb-20 justify-center xl:px-20">
             {
-                location.pathname === '/' && <Link to={'/certificate'} className="hover:text-yellow-500 transition-colors ease-in-out font-semibold flex gap-3">See More <ArrowRight /></Link>
+                location.pathname === '/' && <Link to={'/certificate'} className={`hover:text-yellow-500 transition-colors ease-in-out font-semibold flex gap-3 ${ locale === 'light' && 'text-gray-900' }`}>See More <ArrowRight /></Link>
             }
         </div>
     </>

@@ -11,6 +11,9 @@
   .font-google-sans {
     font-family: "Google Sans Code", monospace;
   }
+  .light-btn {
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }
 }
 @theme {
   --animate-wiggle: wiggle 5s linear infinite;
