@@ -33,7 +33,7 @@ const Navbar = ({ homeTarget, projectTarget, aboutTarget }) => {
         currentScrollPosition >= 50 && glassClass
       } transition-all ease-in ${ locale === 'light' && 'shadow-xl' }`}
     >
-      <nav className="flex justify-between">
+      <nav className="flex items-center justify-between">
         <h1
           className={`font-bold text-2xl ${ locale === 'light' && 'text-gray-700' } ${
             location.pathname !== "/" && "hidden"

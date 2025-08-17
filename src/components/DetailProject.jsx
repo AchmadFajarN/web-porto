@@ -27,8 +27,8 @@ const DetailProject = ({ data }) => {
       </div>
       <h2 className="mt-8 text-xl font-semibold">Description: </h2>
       <p className="my-4">{data.fullDescription}</p>
-      <a className="underline cursor-pointer" href={data.link}>
-        View Demo
+      <a className="underline cursor-pointer" href={data.repositories} target="_blank" >
+        View Demo Or See Source Code
       </a>
       <div className="relative block my-8 w-28 group py-1 mx-auto">
         <div className={`flex justify-center px-2 py-1 z-50 rounded-full relative  ${ locale === 'light' ? 'bg-gray-900 text-gray-100 shadow-xl':'bg-slate-950' }`}>
