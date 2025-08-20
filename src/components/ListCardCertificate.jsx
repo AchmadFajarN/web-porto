@@ -19,7 +19,8 @@ const ListCardCertificate = ({ data }) => {
                         key={ certificate.id }
                         title={ certificate.title } 
                         academy={ certificate.academy } 
-                        time={ certificate.time } 
+                        exp={ certificate.exp } 
+                        release={ certificate.release }
                         link={ certificate.credentials } 
                         image={ certificate.image }   />
                     ))

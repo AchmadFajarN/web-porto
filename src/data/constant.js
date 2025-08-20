@@ -38,6 +38,7 @@ import dcFundamentalReact from '../assets/certificates/dcFundamentalReact.png';
 import dcBePemula from '../assets/certificates/dcBePemula.png';
 import dcBeFundamental from '../assets/certificates/dcBeFundamental.png';
 import cpStateManagement from '../assets/certificates/cpStateManagement.png'; 
+import dcRbE from '../assets/certificates/dcRbE.png';
 
 const data =  [
     {
@@ -77,10 +78,19 @@ const data =  [
 
 const certificates = [
     {
+        id: 0,
+        title: 'Graduation Certication for bootcamp React And BackEnd',
+        academy: 'Dicoding',
+        release: 'Agustus 2025',
+        credentials: 'https://drive.google.com/file/d/1R_6w34gsQE0uD2jhNNJDu15L5QrPWrbq/view?usp=sharing',
+        image: dcRbE,
+        display: true
+    },
+    {
         id: 1,
         title: 'Mengenal Dasar Pemrograman Untuk Pengembang Software',
         academy: 'Dicoding',
-        time: 'April 2028',
+        exp: 'April 2028',
         credentials: 'https://www.dicoding.com/certificates/4EXGVG4D1XRL',
         image: dcDasarSoftware,
         display: true
@@ -89,16 +99,16 @@ const certificates = [
         id: 2,
         title: 'Pengenalan Ke Logika Pemrograman (Programing Logic 101)',
         academy: 'Dicoding',
-        time: 'April 2028',
+        exp: 'April 2028',
         credentials: 'https://www.dicoding.com/certificates/4EXGVGQYGXRL',
         image: dcProgramLogic,
-        display: true
+        display: false
     },
     {
         id: 3,
         title: 'Belajar Dasar Git Dan Github',
         academy: 'Dicoding',
-        time: 'April 2028',
+        exp: 'April 2028',
         credentials: 'https://www.dicoding.com/certificates/QLZ93ENMMZ5D',
         image: dcGit,
         display: true
@@ -107,7 +117,7 @@ const certificates = [
         id: 4,
         title: 'Belajar Pemrograman Dasar Web',
         academy: 'Dicoding',
-        time: 'April 2028',
+        exp: 'April 2028',
         credentials: 'https://www.dicoding.com/certificates/2VX3KEQD3XYQ',
         image: dcDasarWeb,
         display: true
@@ -116,7 +126,7 @@ const certificates = [
         id: 5,
         title: 'Belajar Dasar Pemrograman Javascript',
         academy: 'Dicoding',
-        time: 'April 2028',
+        exp: 'April 2028',
         credentials: 'https://www.dicoding.com/certificates/ERZRE8L7NXYV',
         image: dcJsDasar,
         display: true
@@ -125,16 +135,16 @@ const certificates = [
         id: 6,
         title: 'Belajar Membuat Frontend Untuk Pemula',
         academy: 'Dicoding',
-        time: 'April 2028',
+        exp: 'April 2028',
         credentials: 'https://www.dicoding.com/certificates/0LZ0R0GV3P65',
         image: dcFePemula,
-        display: true
+        display: false
     },
     {
         id: 7,
         title: 'Belajar Membuat Aplikasi Menggunakan React',
         academy: 'Dicoding',
-        time: 'Mei 2028',
+        exp: 'Mei 2028',
         credentials: 'https://www.dicoding.com/certificates/ERZREOK7QXYV',
         image: dcReactPemula,
         display: false
@@ -143,7 +153,7 @@ const certificates = [
         id: 8,
         title: 'Belajar Fundamental Aplikasi Web Menggunakan React',
         academy: 'Dicoding',
-        time: 'Mei 2028',
+        exp: 'Mei 2028',
         credentials: 'https://www.dicoding.com/certificates/72ZD5G24LZYW',
         image: dcFundamentalReact,
         display: false
@@ -152,7 +162,7 @@ const certificates = [
         id: 9,
         title: 'Belajar Backend Pemula Dengan Javascript',
         academy: 'Dicoding',
-        time: 'Mei 2028',
+        exp: 'Mei 2028',
         credentials: 'https://www.dicoding.com/certificates/JLX19OJRNP72',
         image: dcBePemula,
         display: false
@@ -161,7 +171,7 @@ const certificates = [
         id: 10,
         title: 'Belajar Fundamental Backend Menggunakan Javascript',
         academy: 'Dicoding',
-        time: 'Juli 2028',
+        exp: 'Juli 2028',
         credentials: 'https://www.dicoding.com/certificates/ERZR29RROPYV',
         image: dcBeFundamental,
         display: false
@@ -170,10 +180,10 @@ const certificates = [
         id: 11,
         title: 'React.js State Management - Panduan Menggunakan State yg Baik dalam program Kelas Online CODEPOLITAN.',
         academy: 'Codepolitan',
-        time: 'Maret 2028',
+        exp: 'Maret 2028',
         credentials: 'https://codepolitan.com/c/YTUWZDZ',
         image: cpStateManagement,
-        display: false
+        display: true
     }
 ]
 

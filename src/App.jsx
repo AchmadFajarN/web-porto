@@ -5,7 +5,7 @@ import Homepage from "./pages/Homepage";
 import Pages from "./pages/Project";
 import Footer from "./components/Footer";
 import Certificates from "./pages/Certificates";
-import { useRef, useContext, useState, useMemo } from "react";
+import { useRef, useState, useMemo } from "react";
 import themeContext from "./context/ThemeContext";
 
 const App = () => {

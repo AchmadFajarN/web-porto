@@ -8,7 +8,7 @@ const Card = ({ id, image, name, description, status, tools, duration }) => {
   const { locale } = useContext(themeContext);
   return (
     <Link to={`/project/${ id }`} className="hover:scale-105 transition-transform ease-in">
-      <motion.div initial={{translateY: 300, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: `0.${duration}`, ease: ['easeInOut']}} className={`rounded-xl overflow-hidden flex flex-col ${ locale === 'light' ? 'bg-gray-100 text-gray-900 shadow-2xl' : 'bg-radial-[at_100%_100%] from-slate-50/10 via-slate-900 via-60% to-slate-950 to-90% backdrop-blur-lg ' } shadow-xl`}>
+      <motion.div initial={{translateY: 75, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: `0.${duration}`, ease: ['easeInOut']}} className={`rounded-xl overflow-hidden flex flex-col ${ locale === 'light' ? 'bg-gray-100 text-gray-900 shadow-2xl' : 'bg-radial-[at_100%_100%] from-slate-50/10 via-slate-900 via-60% to-slate-950 to-90% backdrop-blur-lg ' } shadow-xl`}>
         <div
           style={{ backgroundImage: `url(${image})` }}
           className="h-50 bg-cover bg-center rounded-md"
