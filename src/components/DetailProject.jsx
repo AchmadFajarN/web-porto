@@ -7,7 +7,7 @@ const DetailProject = ({ data }) => {
   return (
     <motion.div
       className={`${locale === "light" && "text-gray-900"} flex-1`}
-      initial={{ translateY: 300, opacity: 0 }}
+      initial={{ translateY: 35, opacity: 0 }}
       animate={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: ["easeInOut"] }}
     >

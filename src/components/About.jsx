@@ -9,18 +9,18 @@ const About = ({ aboutRef }) => {
     <>
       <div ref={aboutRef} className="my-10 px-6">
         <motion.h1
-          initial={{ translateY: 100, opacity: 0 }}
+          initial={{ translateY: 35, opacity: 0 }}
           whileInView={{ translateY: 0, opacity: 1 }}
-          transition={{ duration: 0.4, ease: ["easeIn"] }}
+          transition={{ duration: 0.4, ease: ["easeInOut"] }}
           className={`${ locale === 'light' && 'text-gray-900' } my-20 text-center md:text-4xl font-bold`}
         >
           About Me
         </motion.h1>
         <div className="flex flex-col justify-center gap-8 items-center">
           <motion.div
-            initial={{ translateY: 200, opacity: 0 }}
+            initial={{ translateY: 35, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: ["easeIn"] }}
+            transition={{ duration: 0.6, ease: ["easeInOut"] }}
             className={`relative group`}
           >
             {locale === "dark" && (
@@ -28,15 +28,14 @@ const About = ({ aboutRef }) => {
                 <div className="absolute w-full h-full animate-wiggle inset-0 border rounded-full bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700 blur group-hover:blur-md transition-all ease-in"></div>
               </>
             )}
-            <div
-              style={{ backgroundImage: `url(${profile})` }}
-              className={`${ locale === 'light' && 'shadow-2xl border p-2' } size-40 xl:size-50 brightness-80 saturate-150 relative bg-center bg-cover rounded-full`}
-            ></div>
+            <div className={`${ locale === 'light' && 'shadow-2xl border' } size-40 xl:size-50 brightness-80 saturate-150 relative overflow-hidden rounded-full`}>
+              <img src={ profile } alt={'profile-image'} loading="lazy" className="w-full rounded-full h-full object-center object-cover" />
+            </div>
           </motion.div>
           <motion.p
-            initial={{ translateY: 200, opacity: 0 }}
+            initial={{ translateY: 35, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: ["easeIn"] }}
+            transition={{ duration: 0.6, ease: ["easeInOut"] }}
             className={`text-xl text-center mb-16 max-w-3xl mx-auto text-gray-300 ${ locale === 'light' && 'text-gray-900' }`}
           >
             "A passionate and results-driven web developer with expertise in

@@ -28,7 +28,7 @@ const Project = ({ targetRef }) => {
             description={key.description}
             status={key.status}
             tools={key.tools}
-            duration={index + 5}
+            duration={index}
           />
         ))}
       </div>

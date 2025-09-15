@@ -19,7 +19,7 @@ const Slide = ({ bgImage }) => {
     setCurrentIndex(indexSlide);
   }
   return (
-    <motion.div initial={{translateY: 300, opacity: 0}} animate={{translateY: 0, opacity: 1}} transition={{duration: 0.5, ease: ['easeInOut']}} className="flex-1">
+    <motion.div initial={{translateY: 35, opacity: 0}} animate={{translateY: 0, opacity: 1}} transition={{duration: 0.5, ease: ['easeInOut']}} className="flex-1">
       <h1 className="text-2xl font-bold mb-4">Screenshoots:</h1>
       <div className="relative h-[240px] md:h-[420px] w-full">
         <div style={{backgroundImage: `url(${bgImage[currentIndex]})`}} className={`absolute flex justify-between duration-500 items-center rounded-2xl inset-0 bg-center bg-cover w-full h-full shadow-xl`}>

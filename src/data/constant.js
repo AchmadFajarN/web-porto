@@ -206,4 +206,27 @@ const getDisplayCertificate = () => {
     return certificates.filter((certificate) => certificate.display);
 }
 
-export { getAllProject, getProjectById, getAllCertificate, getDisplayCertificate };
+ const experience = [
+    {
+      position: "React & BackEnd",
+      place: "Dicoding Academy",
+      date: "March 2025 - August 2025",
+      description:
+        "Completed an intensive training program focused on building modern web applications using React.js for the front-end and Node.js/Hapi.js for the back-end. Gained hands-on experience in developing RESTful APIs, integrating PostgreSQL databases, managing application state, implementing user authentication, and deploying applications. Delivered several end-to-end projects combining responsive design, business logic, and basic security practices.",
+    },
+    {
+      position: "Full-Stack Developer Capstone Project",
+      place: "Dicoding Academy",
+      date: "June 2025 - August 2025",
+      description: `Completed an end-to-end project as part of the bootcamp capstone, building a Book Review and Donation web application. The platform enables users to create accounts, authenticate securely, post and interact with book reviews through comments and likes, and donate books via the system. Developed the back-end using Node.js with Hapi.js and PostgreSQL to design RESTful APIs, manage relational data, and implement authentication. Built the front-end with React.js, TailwindCSS, and Axios, focusing on responsive design, smooth user experience, and reliable client–server communication. This project demonstrated practical skills in full-stack web development, including API integration, database management, state handling, and basic security practices.`,
+    },
+    {
+      position: "Full-Stack Developer",
+      place: "freelancer",
+      date: "August 2025 - Present",
+      description:
+        "Developed a responsive and user-friendly website for an Islamic boarding school using React.js, Tailwind CSS, and Framer Motion. Implemented a modern UI design with smooth animations to enhance user experience, ensuring accessibility across various devices. Collaborated with the client to translate their requirements into an engaging and functional interface, focusing on clarity, performance, and visual appeal",
+    },
+  ];
+
+export { getAllProject, getProjectById, getAllCertificate, getDisplayCertificate, experience };

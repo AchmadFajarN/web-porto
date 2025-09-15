@@ -14,7 +14,7 @@ const ListCardCertificate = ({ data }) => {
             <motion.h2 initial={{ translateY: 200, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} transition={{ duration: 0.5, ease: ['easeInOut'] }} className="text-center text-2xl mb-8 font-bold">Certificates</motion.h2>
             <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 p-2 xl:px-20'>
                 {
-                    data.map((certificate) => (
+                    data.map((certificate, index) => (
                         <CertificateCard 
                         key={ certificate.id }
                         title={ certificate.title } 
@@ -22,7 +22,8 @@ const ListCardCertificate = ({ data }) => {
                         exp={ certificate.exp } 
                         release={ certificate.release }
                         link={ certificate.credentials } 
-                        image={ certificate.image }   />
+                        image={ certificate.image }
+                        durationAnimation={ index }   />
                     ))
                 }
             </div>
