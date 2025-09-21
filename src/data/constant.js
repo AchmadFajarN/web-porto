@@ -26,6 +26,14 @@ import wp5 from '../assets/webPorto/wp5.png';
 import wp6 from '../assets/webPorto/wp6.png';
 import wp7 from '../assets/webPorto/wp7.png';
 
+// notes-app-spa
+import nas1 from '../assets/notes-app-spa/nas1.png';
+import nas2 from '../assets/notes-app-spa/nas2.png';
+import nas3 from '../assets/notes-app-spa/nas3.png'
+import nas4 from '../assets/notes-app-spa/nas4.png'
+import nas5 from '../assets/notes-app-spa/nas5.png'
+import nas6 from '../assets/notes-app-spa/nas6.png'
+
 // Certificate
 import dcDasarSoftware from '../assets/certificates/dcDasarSoftware.png';
 import dcProgramLogic from '../assets/certificates/dcProgramLogic.png';
@@ -40,6 +48,7 @@ import dcBeFundamental from '../assets/certificates/dcBeFundamental.png';
 import cpStateManagement from '../assets/certificates/cpStateManagement.png'; 
 import dcRbE from '../assets/certificates/dcRbE.png';
 
+
 const data =  [
     {
         id: '1',
@@ -50,6 +59,7 @@ const data =  [
         image: profile1,
         screenshoot: [rag1, rag2, rag3, rag4, rag5, rag6],
         repositories: 'https://github.com/AchmadFajarN/Read-and-Gift',
+        isDisplay: true,
         fullDescription: `Read And Gift is a collaborative web application designed to bring book donations and reviews together in one seamless platform. Users can share books along with their reviews, as well as donate books to others within the community. The project emphasizes an intuitive interface, smooth user experience, and efficient interaction flow. Built with React and styled using Tailwind CSS, the application delivers a responsive and visually appealing frontend. The backend is powered by Hapi.js, with PostgreSQL serving as the primary database to ensure reliable and structured data management. This combination of technologies enables both scalability and maintainability for future development.`
     },
     {
@@ -60,6 +70,7 @@ const data =  [
         tools: ["React", "Golang", "Postgres"],
         image: wpnh3,
         screenshoot: [wpnh1, wpnh2, wpnh3, wpnh4, wpnh5, wpnh6],
+        isDisplay: true,
         repositories: 'https://github.com/AchmadFajarN/website_pesantren',
         fullDescription: `Collaboratively developed a responsive and user-friendly website for an Islamic boarding school, working closely with the client to align with their needs. The frontend was built using React.js, Tailwind CSS, and Framer Motion, featuring a modern UI with smooth animations for an engaging user experience. On the backend, Golang and PostgreSQL were implemented to ensure reliable performance, scalability, and secure data management. The project emphasized clarity, efficiency, and visual appeal across all devices.`
     },
@@ -71,8 +82,20 @@ const data =  [
         tools: ["React", "Tailwind", "Framer Motion"],
         image: wp1,
         repositories: 'https://github.com/AchmadFajarN/web-porto',
+        isDisplay: true,
         screenshoot: [wp1, wp2, wp3, wp4, wp5, wp6, wp7],
         fullDescription: "This portfolio website was developed to showcase personal projects, skills, experiences, and achievements in a modern and engaging way. Built with React.js, Tailwind CSS, and Framer Motion, it delivers a responsive design, smooth animations, and a user-friendly interface accessible across devices. React Router DOM was used for seamless navigation between pages, while a dark and light mode feature was implemented using React’s useContext to enhance accessibility and personalization. The website highlights both creativity and professionalism, serving as a digital profile that reflects technical expertise and design sense."
+    },
+    {
+        id: '4',
+        name: 'Notes App - React Fundamental Bootcamp Project',
+        description:'It served as a practical exercise to implement core React concepts and integrate with an external data source.',
+        status: 'Complete',
+        tools: ['React', 'Fetch API', 'Hooks'],
+        image: nas1,
+        repositories: 'https://github.com/AchmadFajarN/Notes-App-SPA-Hooks-API-Contexts',
+        screenshoot: [nas1, nas2, nas3, nas4, nas5, nas6],
+        fullDescription: 'During the React Fundamental bootcamp, I developed a Notes App that integrates with a provided API. In this project, I successfully implemented authentication and authorization, allowing users to securely access their personal notes. The application also includes core features such as adding new notes, deleting existing ones, and archiving or restoring notes. All of these functionalities were built using React Hooks, which helped me deepen my understanding of state management and component-based development. This project gave me valuable hands-on experience in connecting a frontend application with an API, handling user access, and building interactive features in React.'
     }
 ]
 
@@ -208,7 +231,7 @@ const getDisplayCertificate = () => {
 
  const experience = [
     {
-      position: "React & BackEnd",
+      position: "Full-Stack Developer - Trainee",
       place: "Dicoding Academy",
       date: "March 2025 - August 2025",
       description:

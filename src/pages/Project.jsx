@@ -18,7 +18,7 @@ const Project = () => {
   }
 
   return (
-    <div className='min-h-screen py-20 px-2 xl:px-20 flex flex-col gap-8 xl:flex-row'>
+    <div className='min-h-screen py-20 px-6 xl:px-20 flex flex-col gap-8 xl:flex-row'>
         <Slide bgImage={data.screenshoot} />
         <DetailProject data={data} />
     </div>

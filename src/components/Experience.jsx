@@ -3,20 +3,20 @@ import { useContext } from "react";
 import themeContext from "../context/ThemeContext";
 import { experience } from "../data/constant";
 
-const Experience = () => {
+const Experience = ({ experienceTarget }) => {
   const { locale } = useContext(themeContext);
   return (
-    <div className="my-20 px-6 xl:px-20">
-      <motion.h2
+    <div ref={experienceTarget} className="my-40 px-6 xl:px-20">
+      <motion.h1
         initial={{ translateY: 20, opacity: 0 }}
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: ["easeInOut"] }}
-        className={`text-center font-semibold text-2xl ${
+        className={`text-center font-semibold md:text-4xl ${
           locale === "light" && "text-gray-700"
         } mb-10`}
       >
         Experience
-      </motion.h2>
+      </motion.h1>
       {experience.map((ex, index) => (
         <div className={`text-gray-900 ${ locale === 'dark' && 'text-white' }`}>
           <div className="flex gap-2 items-center mt-4">

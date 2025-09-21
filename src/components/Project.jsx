@@ -1,12 +1,15 @@
 import { getAllProject } from "../data/constant";
-import Card from "./Card";
 import { motion } from "motion/react";
 import { useContext } from "react";
 import themeContext from "../context/ThemeContext";
+import ListProject from "./ListProject";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 const Project = ({ targetRef }) => {
   const { locale } = useContext(themeContext);
   const data = getAllProject();
+  const projectDisplay = data.filter((pro) => pro.isDisplay);
 
   return (
     <div ref={targetRef} className="mt-50 px-4 xl:px-20">
@@ -18,19 +21,11 @@ const Project = ({ targetRef }) => {
       >
         Projects
       </motion.h1>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 my-2">
-        {data.map((key, index) => (
-          <Card
-            id={key.id}
-            key={index}
-            image={key.image}
-            name={key.name}
-            description={key.description}
-            status={key.status}
-            tools={key.tools}
-            duration={index}
-          />
-        ))}
+      <ListProject data={projectDisplay} />
+      <div className="px-2 flex my-20 justify-center xl:px-20">
+        {
+          location.pathname === '/' && <Link to={'/project'} className={`hover:text-yellow-500 transition-colors ease-in-out font-semibold flex gap-3 ${ locale === 'light' && 'text-gray-900' }`}>See More <ArrowRight /></Link>
+        }
       </div>
     </div>
   );

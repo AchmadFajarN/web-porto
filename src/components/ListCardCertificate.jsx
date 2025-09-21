@@ -12,7 +12,7 @@ const ListCardCertificate = ({ data }) => {
     <>
         <div className="my-20">
             <motion.h2 initial={{ translateY: 35, opacity: 0 }} whileInView={{ translateY: 0, opacity: 1 }} transition={{ duration: 0.5, ease: ['easeInOut'] }} className={`text-center ${ locale === 'light' && 'text-gray-900' } text-2xl mb-8 font-bold`}>Certificates</motion.h2>
-            <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 p-2 xl:px-20'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 p-4 xl:px-20'>
                 {
                     data.map((certificate, index) => (
                         <CertificateCard 
