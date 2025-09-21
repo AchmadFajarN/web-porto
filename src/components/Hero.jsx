@@ -19,6 +19,13 @@ const Hero = ({ targetRef, homeTarget }) => {
     });
   };
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/linkedin.pdf';
+    link.download = 'achamd-fajar-linkedin-cv.pdf'
+    link.click();
+  }
+
   const data = ["Web Developer", "Front-End", "Back-End"];
 
   return (
@@ -65,7 +72,7 @@ const Hero = ({ targetRef, homeTarget }) => {
         </p>
       </div>
       <div className="my-8 z-20 flex flex-col md:flex-row gap-4">
-        <button className={`cursor-pointer font-semibold group text-sm justify-center items-center py-2 px-4 ${ locale === 'light'? 'bg-gray-900 border border-gray-300 hover:text-gray-900 hover:border-gray-900 hover:bg-transparent':' bg-linear-to-t from-sky-500 to-indigo-500 hover:shadow-[0_0_20px_2px_rgba(59,130,246,0.5)]' } transition-all ease-in duration-300 rounded-md`}>
+        <button onClick={ handleDownload } className={`cursor-pointer font-semibold group text-sm justify-center items-center py-2 px-4 ${ locale === 'light'? 'bg-gray-900 border border-gray-300 hover:text-gray-900 hover:border-gray-900 hover:bg-transparent':' bg-linear-to-t from-sky-500 to-indigo-500 hover:shadow-[0_0_20px_2px_rgba(59,130,246,0.5)]' } transition-all ease-in duration-300 rounded-md`}>
           <div className={`flex w-full h-full  ${ locale === 'light' ? '':'shadow-[0_25px_10px_rgba(0,0,0,0.3)]' } justify-center items-center gap-2`}>
             <Download size={20} /> 
             Download CV
