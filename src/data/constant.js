@@ -34,6 +34,22 @@ import nas4 from '../assets/notes-app-spa/nas4.png'
 import nas5 from '../assets/notes-app-spa/nas5.png'
 import nas6 from '../assets/notes-app-spa/nas6.png'
 
+// Ta
+import toa1 from '../assets/todoapps/toa1.png'
+import toa2 from '../assets/todoapps/toa2.png'
+import toa3 from '../assets/todoapps/toa3.png'
+import toa4 from '../assets/todoapps/toa4.png'
+
+// bs
+import bs1 from '../assets/bookshelf-app/bs1.png';
+import bs2 from '../assets/bookshelf-app/bs2.png';
+
+// lpc
+import lpc1 from '../assets/landing-page-caffe/lpc1.png' 
+import lpc2 from '../assets/landing-page-caffe/lpc2.png' 
+import lpc3 from '../assets/landing-page-caffe/lpc3.png' 
+import lpc4 from '../assets/landing-page-caffe/lpc4.png' 
+
 // Certificate
 import dcDasarSoftware from '../assets/certificates/dcDasarSoftware.png';
 import dcProgramLogic from '../assets/certificates/dcProgramLogic.png';
@@ -47,6 +63,8 @@ import dcBePemula from '../assets/certificates/dcBePemula.png';
 import dcBeFundamental from '../assets/certificates/dcBeFundamental.png';
 import cpStateManagement from '../assets/certificates/cpStateManagement.png'; 
 import dcRbE from '../assets/certificates/dcRbE.png';
+import dcreact2 from '../assets/certificates/dc-react-2.png'
+import cpexpress from '../assets/certificates/cpexpress.png'
 
 
 const data =  [
@@ -88,14 +106,47 @@ const data =  [
     },
     {
         id: '4',
-        name: 'Notes App - React Fundamental Bootcamp Project',
+        name: 'Notes App - Bootcamp Project',
         description:'It served as a practical exercise to implement core React concepts and integrate with an external data source.',
         status: 'Complete',
         tools: ['React', 'Fetch API', 'Hooks'],
         image: nas1,
-        repositories: 'https://github.com/AchmadFajarN/Notes-App-SPA-Hooks-API-Contexts',
+        repositories: 'https://notes-app-spa-hook-api-context.netlify.app/',
         screenshoot: [nas1, nas2, nas3, nas4, nas5, nas6],
         fullDescription: 'During the React Fundamental bootcamp, I developed a Notes App that integrates with a provided API. In this project, I successfully implemented authentication and authorization, allowing users to securely access their personal notes. The application also includes core features such as adding new notes, deleting existing ones, and archiving or restoring notes. All of these functionalities were built using React Hooks, which helped me deepen my understanding of state management and component-based development. This project gave me valuable hands-on experience in connecting a frontend application with an API, handling user access, and building interactive features in React.'
+    },
+    {   
+        id: '7',
+        name: 'Todo Apps',
+        description: 'A simple Todo App built with DOM manipulation to add, update, and remove tasks, strengthening my core JavaScript skills.',
+        status: 'Complete',
+        tools: ['HTML', 'CSS', 'Javascript'],
+        image: toa1,
+        repositories: 'https://achmadfajarn.github.io/TodoList-App/',
+        screenshoot: [toa1, toa2, toa3, toa4],
+        fullDescription: 'The Todo App is a simple project I built to strengthen my understanding of DOM manipulation in JavaScript. In this app, users can add new tasks, update them, and remove them directly from the interface. All interactions are handled dynamically through the DOM without requiring page reloads. This project highlights my ability to use core JavaScript features to create an interactive application while improving my skills in handling user input and updating the UI in real time.'
+    },
+    {
+        id: '5',
+        name: 'Bookshelf App',
+        description: 'A simple Bookshelf App built using JavaScript DOM manipulation, featuring add, archive, and delete functionalities for managing books.',
+        status: 'Complete',
+        tools: ['HTML', 'Javascript', 'DOM'],
+        image: bs1,
+        repositories: 'https://achmadfajarn.github.io/submisson-Membangun-bookshelf-app/',
+        screenshoot: [bs1, bs2],
+        fullDescription: 'The Bookshelf App is a project I created during my learning journey to practice JavaScript DOM manipulation. The application allows users to manage their personal book collection with features such as adding new books, archiving books, and deleting books.All interactions are handled directly through the DOM, making the app dynamic and responsive without requiring page reloads. This project demonstrates my ability to apply core JavaScript concepts, especially working with the DOM to update and manage user interface elements in real time.'
+    },
+    {
+        id: '6',
+        name: 'landing page caffe',
+        description: 'A simple Café Landing Page built as a self-learning project, where I successfully implemented CSS Grid to create a clean and structured layout.',
+        status: 'Complete',
+        tools: ['HTML', 'CSS'],
+        image: lpc1,
+        repositories: 'https://achmadfajarn.github.io/caffe-web-aesthetic-responsive/',
+        screenshoot: [lpc1, lpc2, lpc3, lpc4],
+        fullDescription: 'The Café Landing Page is a simple self-learning project where I practiced implementing CSS Grid to build a clean, structured, and responsive layout. This project reflects my ability to learn independently while applying modern CSS techniques in a practical way.'
     }
 ]
 
@@ -207,6 +258,24 @@ const certificates = [
         credentials: 'https://codepolitan.com/c/YTUWZDZ',
         image: cpStateManagement,
         display: true
+    },
+    {
+        id: 12,
+        title: 'React.js State - Mengelola Perubahan Tampilan dengan Data bersama Event Handler dalam program Kelas Online CODEPOLITAN',
+        academy: 'Codepolitan',
+        exp: 'Maret 2028',
+        credentials: 'https://codepolitan.com/c/RLMIBE0',
+        image: dcreact2,
+        display: false
+    },
+     {
+        id: 13,
+        title: 'yang telah menyelesaikan kelas Belajar Dasar Express.js dalam program Kelas Online CODEPOLITAN',
+        academy: 'Codepolitan',
+        exp: 'September 2028',
+        credentials: 'https://codepolitan.com/c/8L3INJI',
+        image: cpexpress,
+        display: false
     }
 ]
 
