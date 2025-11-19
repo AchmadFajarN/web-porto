@@ -10,6 +10,7 @@ import vscode from "../assets/vscode.svg";
 import { motion } from "motion/react";
 import { useContext } from "react";
 import themeContext from "../context/ThemeContext";
+import Underline from "./Underline";
 
 const Tools = () => {
   const { locale } = useContext(themeContext);
@@ -26,7 +27,10 @@ const Tools = () => {
   ];
   return (
     <>
-      <motion.h1 initial={{translateY: 35, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.4, ease: ['easeInOut']}} className={`my-20 md:my-50 text-center md:text-4xl font-bold ${ locale === 'light' && 'text-gray-900' }`}>My Tools:</motion.h1> 
+    <div className="mt-20 pl-8 md:pl-20 md:mt-50 mb-20">
+      <motion.h1 initial={{translateY: 35, opacity: 0}} whileInView={{translateY: 0, opacity: 1}} transition={{duration: 0.4, ease: ['easeInOut']}} className={` md:text-4xl font-bold ${ locale === 'light' && 'text-gray-900' }`}>My Tools:</motion.h1> 
+      <Underline />
+    </div>
       <div style={{maskImage: 'linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0))'}} className="relative mb-50 px-20 overflow-hidden h-[80px]  w-90% mx-auto max-w-[1536px]">
         {project.map((key, index) => {
           const delay =

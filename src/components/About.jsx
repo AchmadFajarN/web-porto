@@ -1,21 +1,22 @@
-import profile from "../assets/profile.jpg";
 import { motion } from "motion/react";
 import { useContext } from "react";
 import themeContext from "../context/ThemeContext";
+import Underline from "./Underline";
 
 const About = ({ aboutRef }) => {
   const { locale } = useContext(themeContext);
   return (
     <>
-      <div ref={aboutRef} className="my-10 px-6">
+      <div ref={aboutRef} className="my-10 px-6 xl:px-20">
         <motion.h1
           initial={{ translateY: 35, opacity: 0 }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.4, ease: ["easeInOut"] }}
-          className={`${ locale === 'light' && 'text-gray-900' } my-20 text-center md:text-4xl font-bold`}
+          className={`${ locale === 'light' && 'text-gray-900' } md:text-4xl font-bold`}
         >
           About Me
         </motion.h1>
+        <Underline />
         <div className="flex flex-col md:flex-row gap-16 justify-center items-center">
           <motion.div
             initial={{ translateY: 35, opacity: 0 }}

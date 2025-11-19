@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { useContext } from "react";
 import themeContext from "../context/ThemeContext";
 import { experience } from "../data/constant";
+import Underline from "./Underline";
 
 const Experience = ({ experienceTarget }) => {
   const { locale } = useContext(themeContext);
@@ -11,12 +12,13 @@ const Experience = ({ experienceTarget }) => {
         initial={{ translateY: 20, opacity: 0 }}
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: ["easeInOut"] }}
-        className={`text-center font-semibold md:text-4xl ${
-          locale === "light" && "text-gray-700"
-        } mb-10`}
+        className={`font-semibold md:text-4xl ${
+          locale === "light" && "text-gray-900"
+        }`}
       >
         Experience
       </motion.h1>
+      <Underline />
       {experience.map((ex, index) => (
         <div className={`text-gray-900 ${ locale === 'dark' && 'text-white' }`}>
           <div className="flex gap-2 items-center mt-4">

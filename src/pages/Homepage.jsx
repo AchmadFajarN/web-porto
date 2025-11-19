@@ -12,8 +12,8 @@ const Homepage = ({ homeTarget, aboutTarget, projectTarget, targetRef, experienc
   return (
     <>
       <Hero targetRef={ targetRef } homeTarget={ homeTarget } />
-      <Project targetRef={ projectTarget } />
       <Experience experienceTarget={experienceTarget} />
+      <Project targetRef={ projectTarget } />
       <About aboutRef={ aboutTarget } />
       <Tools />
       <Contact />

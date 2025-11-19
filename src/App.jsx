@@ -32,7 +32,7 @@ const App = () => {
     <>
     <themeContext.Provider value={ localeContextValue } >
       <ScrollOnTop />
-      <div className={`${ locale === 'light' ? 'bg-gray-100' : 'bg-slate-950'} transition-colors duration-200 font-montserat min-w-full min-h-[100vh] text-slate-100 overflow-hidden`}>
+      <div className={`${ locale === 'light' ? 'bg-gray-100' : 'bg-slate-950'} transition-colors duration-200 font-montserat min-w-full min-h-[100vh] max-w-[1240px]  text-slate-100 overflow-hidden`}>
         <Navbar
           homeTarget={homeTarget}
           projectTarget={projectTarget}

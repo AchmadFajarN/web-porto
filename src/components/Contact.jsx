@@ -102,26 +102,6 @@ const Contact = () => {
                 </p>
               </motion.div>
             </div>
-
-            <div className="text-center mt-16">
-              <h3 className="text-3xl font-bold mb-6 text-blue-600">
-                Ready to bring your ideas to life?
-              </h3>
-              <a
-                href="#contact"
-                className="relative block w-[15rem] group py-1 mx-auto"
-              >
-                <div className={`flex justify-center z-20 mx-auto items-center w-60 px-6 rounded-full relative py-4 bg-slate-950 ${ locale === 'light' && 'bg-transparent text-gray-900 font-bold hover:bg-gray-900 hover:text-gray-300 transition-colors duration-150 ease-in-out border-2 border-gray-900' }`}>
-                  Contact Me Now
-                  <Phone className="ml-3 w-5 h-5" />
-                </div>
-                {locale === "dark" && (
-                  <>
-                    <div className="absolute inset-0 group-hover:blur-md transition-all ease-in w-full animate-tilt rounded-full blur-sm bg-conic from-blue-600 to-emerald-400 to-50%"></div>
-                  </>
-                )}
-              </a>
-            </div>
           </div>
         </div>
       </div>

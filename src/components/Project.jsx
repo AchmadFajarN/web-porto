@@ -5,6 +5,7 @@ import themeContext from "../context/ThemeContext";
 import ListProject from "./ListProject";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import Underline from "./Underline";
 
 const Project = ({ targetRef }) => {
   const { locale } = useContext(themeContext);
@@ -17,15 +18,26 @@ const Project = ({ targetRef }) => {
         initial={{ translateY: 100, opacity: 0 }}
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.4, ease: ["easeIn"] }}
-        className={`my-20 text-center md:text-4xl font-bold ${ locale === 'light' && 'text-gray-900' }`}
+        className={`md:text-4xl font-bold ${
+          locale === "light" && "text-gray-900"
+        }`}
       >
         Projects
       </motion.h1>
+      <Underline />
       <ListProject data={projectDisplay} />
-      <div className="px-2 flex my-20 justify-center xl:px-20">
-        {
-          location.pathname === '/' && <Link to={'/project'} className={`hover:text-yellow-500 transition-colors ease-in-out font-semibold flex gap-3 ${ locale === 'light' && 'text-gray-900' }`}>See More <ArrowRight /></Link>
-        }
+      <div className="flex my-20 justify-end">
+        {location.pathname === "/" && (
+          <Link
+            to={"/project"}
+            className={`group font-semibold md:text-xl ${
+              locale === "light" && "text-gray-900"
+            }`}
+          >
+            <span className="flex items-center gap-3">See More <ArrowRight /></span>
+            <span className={`block mt-2 w-full h-[2px] bg-slate-900 ${ locale === 'dark' && 'bg-white' } scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100`}></span>
+          </Link>
+        )}
       </div>
     </div>
   );
